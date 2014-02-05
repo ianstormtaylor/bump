@@ -9,7 +9,7 @@
 
 ## Usage
 
-    $ version 0.4.1
+    $ v 0.4.1
     
         Version set to 0.4.1 in package.json and component.json.
     

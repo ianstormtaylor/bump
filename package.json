@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "bin": {
-    "version": "bin/version"
+    "v": "bin/set-version"
   },
   "dependencies": {
     "listify": "0.0.1",
