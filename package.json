@@ -1,0 +1,17 @@
+{
+  "name": "set-version",
+  "description": "Easily update the version of all the different package.json equivalents.",
+  "repository": "git://github.com/ianstormtaylor/set-version.git",
+  "version": "0.0.1",
+  "license": "MIT",
+  "bin": {
+    "version": "bin/version"
+  },
+  "dependencies": {
+    "listify": "0.0.1",
+    "colors": "~0.6.2"
+  },
+  "devDependencies": {
+    "mocha": "1.x"
+  }
+}
