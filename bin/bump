@@ -4,6 +4,7 @@ var colors = require('colors');
 var exists = require('fs').existsSync;
 var listify = require('listify');
 var resolve = require('path').resolve;
+var increment = require('semver').inc;
 var write = require('fs').writeFileSync;
 
 /**
@@ -35,6 +36,14 @@ sources.forEach(function(src){
   existing = json.version;
   files[src] = json;
 });
+
+/**
+ * Handle "major", "minor", "patch".
+ */
+
+if (!~version.indexOf('.')) {
+  version = increment(files['package.json'].version, version);
+}
 
 /**
  * Write the new version to the existing sources.
