@@ -1,11 +1,19 @@
 
 # set-version
 
-  CLI to easily set the version of all the different package.json equivalents.
+  Easily update the version of all the different package.json equivalents.
 
 ## Installation
 
-    $ npm install set-version
+    $ npm install -g set-version
+
+## Usage
+
+    $ version 0.4.1
+    
+        Version set to 0.4.1 in package.json and component.json.
+    
+    $ 
 
 ## License
 
