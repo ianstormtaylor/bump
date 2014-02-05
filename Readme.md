@@ -1,17 +1,17 @@
 
-# set-version
+# bump
 
-  Easily update the version of all the different package.json equivalents.
+  Easily bump the version of all the different package.json equivalents.
 
 ## Installation
 
-    $ npm install -g set-version
+    $ npm install -g ianstormtaylor/bump
 
 ## Usage
 
-    $ v 0.4.1
+    $ bump 0.4.1
     
-        Version set to 0.4.1 in package.json and component.json.
+        Version bumped to 0.4.1 in package.json and component.json.
 
 ## License
 

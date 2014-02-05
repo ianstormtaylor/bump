@@ -1,11 +1,11 @@
 {
-  "name": "set-version",
-  "description": "Easily update the version of all the different package.json equivalents.",
-  "repository": "git://github.com/ianstormtaylor/set-version.git",
+  "name": "bump",
+  "description": "Easily bump the version of all the different package.json equivalents.",
+  "repository": "git://github.com/ianstormtaylor/bump.git",
   "version": "0.0.1",
   "license": "MIT",
   "bin": {
-    "v": "bin/set-version"
+    "bump": "bin/bump"
   },
   "dependencies": {
     "listify": "0.0.1",
