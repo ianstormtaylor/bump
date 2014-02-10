@@ -12,9 +12,9 @@ var write = require('fs').writeFileSync;
  */
 
 var version = process.argv[2];
-var existing;
 var sources = ['package.json', 'component.json', 'bower.json'];
 var files = {};
+var cur;
 
 /**
  * Read each source that exists.
@@ -23,17 +23,16 @@ var files = {};
 sources.forEach(function(src){
   var path = resolve(process.cwd(), src);
   if (!exists(path)) return;
+
   var json = require(path);
+  var v = json.version;
+  var priv = json.private;
 
-  if (!json.version) {
-    fatal('No existing version found in ' + src.red + '.');
-  }
+  if (priv && !v) return;
+  if (!v) fatal('No existing version found in ' + src.red + '.');
+  if (cur && v != cur) fatal('Existing version in ' + src.red + ' does not match others.');
+  cur = v;
 
-  if (existing && json.version != existing) {
-    fatal('Existing version in ' + src.red + ' does not match others.');
-  }
-
-  existing = json.version;
   files[src] = json;
 });
 
@@ -42,7 +41,8 @@ sources.forEach(function(src){
  */
 
 if (!~version.indexOf('.')) {
-  version = increment(files['package.json'].version, version);
+  var file = Object.keys(files)[0];
+  version = increment(files[file].version, version);
 }
 
 /**
@@ -53,7 +53,7 @@ sources = Object.keys(files);
 sources.forEach(function(src){
   var path = resolve(process.cwd(), src);
   var json = files[src];
-  json.version = version;
+  if (json.version) json.version = version;
   write(path, JSON.stringify(json, null, 2));
 });
 

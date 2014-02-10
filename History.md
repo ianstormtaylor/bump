@@ -1,4 +1,9 @@
 
+0.3.0 - February 10, 2013
+-------------------------
+* fix relying on package.json
+* handle private packages nicely
+
 0.2.0 - February 5, 2013
 ------------------------
 * add `major`, `minor`, `patch` shortcuts thanks to @anthonyshort's genius
