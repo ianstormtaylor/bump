@@ -1,4 +1,9 @@
 
+0.4.0 / 2014-06-20
+==================
+
+ * add api `bump(path, version, manifests)`
+
 0.3.0 - February 10, 2013
 -------------------------
 * fix relying on package.json
