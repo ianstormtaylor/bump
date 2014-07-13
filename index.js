@@ -35,6 +35,8 @@ function bump(root, version, manifests){
     if (!exists(path)) return;
 
     var json = require(path);
+    if (!json.version) return;
+
     var v = json.version;
     var p = json.private;
 
