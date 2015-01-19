@@ -58,7 +58,7 @@ function bump(root, version, manifests){
     var path = resolve(root, key);
     var json = files[key];
     if (json.version) json.version = version;
-    write(path, JSON.stringify(json, null, 2));
+    write(path, JSON.stringify(json, null, 2) + '\n');
   });
 
   ret.version = version;
