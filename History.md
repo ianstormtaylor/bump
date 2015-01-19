@@ -1,13 +1,15 @@
 
-0.4.1 / 2014-07-13
-==================
+0.4.2 - January 19, 2015
+------------------------
+* add whitespace to end of manifest
 
- * ignore versionless manifests
+0.4.1 - July 13, 2014
+---------------------
+* ignore versionless manifests
 
-0.4.0 / 2014-06-20
-==================
-
- * add api `bump(path, version, manifests)`
+0.4.0 - June 20, 2014
+---------------------
+* add api `bump(path, version, manifests)`
 
 0.3.0 - February 10, 2013
 -------------------------
