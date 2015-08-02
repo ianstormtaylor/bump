@@ -1,5 +1,5 @@
 {
-  "name": "bump",
+  "name": "bump-version",
   "description": "Easily bump the version of all the different package.json equivalents.",
   "repository": "git://github.com/ianstormtaylor/bump.git",
   "version": "0.4.2",
