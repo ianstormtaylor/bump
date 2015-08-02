@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var colors = require('colors');
+var chalk = require('chalk');
 var listify = require('listify');
 var bump = require('..');
 
@@ -14,7 +14,7 @@ try {
   fatal(e.message);
 }
 
-log('Version bumped to ' + info.version.blue + ' in ' + listify(info.in).blue + '.');
+log('Version bumped to ' + chalk.green(info.version) + ' in ' + chalk.cyan(listify(info.in)) + '.');
 
 /**
  * Error out with a `msg`.
