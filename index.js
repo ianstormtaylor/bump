@@ -51,6 +51,7 @@ function bump(root, version, manifests){
   if (!~version.indexOf('.')) {
     var file = Object.keys(files)[0];
     version = increment(files[file].version, version);
+    if (!version) throw new Error('invalid release type specified');
   }
 
   var keys = Object.keys(files);
