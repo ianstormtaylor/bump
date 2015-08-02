@@ -9,7 +9,7 @@ var bump = require('..');
  */
 
 try {
-  var info = bump(process.cwd(), process.argv[2]);
+  var info = bump(process.cwd(), process.argv[2] || 'patch');
 } catch (e) {
   fatal(e.message);
 }
