@@ -1,4 +1,14 @@
 
+0.5.0 / 2015-08-02
+==================
+
+  * renamed to `bump-version` and published to npm
+  * throw error if version is invalid
+  * adds `--print-version` flag for machine-consumption
+  * adds `--directory` flag for customizable behavior
+  * changed output colors (green for version number, cyan for manifest files)
+  * updating deps
+
 0.4.2 - January 19, 2015
 ------------------------
 * add whitespace to end of manifest

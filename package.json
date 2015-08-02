@@ -2,7 +2,7 @@
   "name": "bump-version",
   "description": "Easily bump the version of all the different package.json equivalents.",
   "repository": "git://github.com/ianstormtaylor/bump.git",
-  "version": "0.4.2",
+  "version": "0.5.0",
   "license": "MIT",
   "bin": {
     "bump": "bin/bump"
